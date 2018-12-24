@@ -1,4 +1,4 @@
-# React.jsの勉強用
+# Reactの勉強用
 React公式チュートリアル  
 https://reactjs.org/tutorial/tutorial.html
 
