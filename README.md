@@ -2,6 +2,9 @@
 React公式チュートリアル  
 https://reactjs.org/tutorial/tutorial.html
 
+## 2018-12-28
+
+
 ## 2018-12-27
 Completing the Game - Lifting State Upまで  
 - Boradのconstructorの「Array(9).fill(null)」は、Arrayで配列を作ってる？Arrayは関数名？宣言？JSの仕様？Reactの仕様？
