@@ -3,7 +3,8 @@ React公式チュートリアル
 https://reactjs.org/tutorial/tutorial.html
 
 ## 2018-12-28
-
+Adding Time Travel - Implementing Time Travelまで
+- Wrapping Upでさらに機能を追加する
 
 ## 2018-12-27
 Completing the Game - Lifting State Upまで  
