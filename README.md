@@ -2,6 +2,11 @@
 React公式チュートリアル  
 https://reactjs.org/tutorial/tutorial.html
 
+## 2018-12-29
+Wrapping Upの追加機能1:置いたマスの位置を表示movesリストに表示
+- Gameのstateにlocation配列を追加
+- historyと同様に表示する
+
 ## 2018-12-28
 Adding Time Travel - Implementing Time Travelまで
 - Wrapping Upでさらに機能を追加する
