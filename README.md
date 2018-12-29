@@ -6,6 +6,7 @@ https://reactjs.org/tutorial/tutorial.html
 Wrapping Upの追加機能1:置いたマスの位置を表示movesリストに表示
 - Gameのstateにlocation配列を追加
 - historyと同様に表示する
+- Math.trunc()は小数点以下を切り捨て
 
 ## 2018-12-28
 Adding Time Travel - Implementing Time Travelまで
