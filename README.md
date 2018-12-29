@@ -4,8 +4,7 @@ https://reactjs.org/tutorial/tutorial.html
 
 ## 2018-12-29
 Wrapping Upの追加機能1:置いたマスの位置を表示movesリストに表示
-- Gameのstateにlocation配列を追加
-- historyと同様に表示する
+- Gameのstate.historyにlocationオブジェクトを追加
 - Math.trunc()は小数点以下を切り捨て
 
 ## 2018-12-28
