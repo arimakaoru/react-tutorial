@@ -2,6 +2,14 @@
 React公式チュートリアル  
 https://reactjs.org/tutorial/tutorial.html
 
+## 2019-01-04
+追加機能2:現在の操作をふと文字にする
+- cssでselectedクラスに太文字のスタイルを追加
+- 最新のステップにselectedクラスを付ける
+- reactでのスタイリングの良い方法は？
+    - css in js
+    - css modules
+
 ## 2018-12-29
 Wrapping Upの追加機能1:置いたマスの位置を表示movesリストに表示
 - Gameのstate.historyにlocationオブジェクトを追加
