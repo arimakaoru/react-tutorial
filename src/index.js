@@ -44,24 +44,6 @@ class Board extends React.Component {
       <div>
         {boardRow}
       </div>
-
-      // <div>
-      //   <div className="board-row">
-      //     {this.renderSquare(0)}
-      //     {this.renderSquare(1)}
-      //     {this.renderSquare(2)}
-      //   </div>
-      //   <div className="board-row">
-      //     {this.renderSquare(3)}
-      //     {this.renderSquare(4)}
-      //     {this.renderSquare(5)}
-      //   </div>
-      //   <div className="board-row">
-      //     {this.renderSquare(6)}
-      //     {this.renderSquare(7)}
-      //     {this.renderSquare(8)}
-      //   </div>
-      // </div>
     );
   }
 }
@@ -81,6 +63,7 @@ class Game extends React.Component {
       ],
       stepNumber: 0,
       xIsNext: true,
+      sortType: 'ascending',
     };
   }
 
@@ -115,6 +98,18 @@ class Game extends React.Component {
     });
   }
 
+  toggleSortType() {
+    if(this.state.sortType === 'ascending'){
+      this.setState({
+        sortType: 'descending',
+      });
+    }else if(this.state.sortType === 'descending'){
+      this.setState({
+        sortType: 'ascending',
+      });
+    }
+  }
+
   render() {
     const history = this.state.history;
     const current = history[this.state.stepNumber];
@@ -139,6 +134,10 @@ class Game extends React.Component {
 
     });
 
+    if(this.state.sortType === 'descending'){
+      moves.reverse();
+    }
+
     let status;
     if (winner) {
       status = "Winner: " + winner;
@@ -157,6 +156,7 @@ class Game extends React.Component {
         <div className="game-info">
           <div>{status}</div>
           <ol>{moves}</ol>
+          <button type="button" onClick={() => this.toggleSortType()}>sort</button>
         </div>
       </div>
     );
